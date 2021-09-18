@@ -7,7 +7,6 @@ var audio6 = new Audio("./sounds/kick-bass.mp3");
 var audio7 = new Audio("./sounds/snare.mp3");
 
 document.querySelector(".bi").addEventListener("click", function(){
-        console.log("hi")
         document.querySelector(".help").remove()
 });
 
@@ -15,7 +14,7 @@ document.querySelector(".bi").addEventListener("click", function(){
 for(var i = 0; i < document.querySelectorAll(".drum").length;i++){
         document.querySelectorAll(".drum")[i].addEventListener("click", function(){
                 playMusic(this.innerHTML)
-                buttonAnimation(this).innerHTML;
+                buttonAnimation(this.innerHTML);
         })
 }
 
