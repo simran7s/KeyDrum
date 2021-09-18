@@ -23,6 +23,10 @@ p {
   padding: 1rem;
 }
 
+i {
+  background-color: #da0463;
+}
+
 footer {
   color: #dbedf3;
   font-family: sans-serif;

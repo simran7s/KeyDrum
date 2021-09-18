@@ -6,6 +6,10 @@ var audio5 = new Audio("./sounds/crash.mp3");
 var audio6 = new Audio("./sounds/kick-bass.mp3");
 var audio7 = new Audio("./sounds/snare.mp3");
 
+document.querySelector(".bi").addEventListener("click", function(){
+        console.log("hi")
+        document.querySelector(".help").remove()
+});
 
 // loop through each .drum element
 for(var i = 0; i < document.querySelectorAll(".drum").length;i++){
@@ -57,9 +61,11 @@ function playMusic(key) {
 }
 
 
+
 function buttonAnimation(key){
        document.querySelector("."+key).classList.add("pressed");
        setTimeout(() => {
         document.querySelector("."+key).classList.remove("pressed");    
        }, 300);
 }
+
